@@ -68,9 +68,9 @@
       "apiVersion": "2018-04-01",
       "location": "[parameters('location')]",
       "plan": {
-        "name": "ubuntu_1604_edgeruntimeonly",
-        "publisher": "microsoft_iot_edge",
-        "product": "iot_edge_vm_ubuntu"
+        "name": "18.04-LTS",
+        "publisher": "Canonical",
+        "product": "UbuntuServer"
       },
       "properties": {
         "osProfile": {
