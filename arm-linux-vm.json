@@ -67,11 +67,6 @@
       "name": "[parameters('virtualMachineName')]",
       "apiVersion": "2018-04-01",
       "location": "[parameters('location')]",
-      "plan": {
-        "name": "18.04-LTS",
-        "publisher": "Canonical",
-        "product": "UbuntuServer"
-      },
       "properties": {
         "osProfile": {
           "computerName": "[parameters('virtualMachineName')]",
@@ -83,9 +78,9 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "microsoft_iot_edge",
-            "offer": "iot_edge_vm_ubuntu",
-            "sku": "ubuntu_1604_edgeruntimeonly",
+            "publisher": "Canonical",
+            "offer": "UbuntuServer",
+            "sku": "18.04-LTS",
             "version": "latest"
           },
           "osDisk": {
